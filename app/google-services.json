@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "258347700136",
+    "firebase_url": "https://iott-bc848-default-rtdb.firebaseio.com",
+    "project_id": "iott-bc848",
+    "storage_bucket": "iott-bc848.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258347700136:android:448d04f02639823b3e979d",
+        "android_client_info": {
+          "package_name": "com.example.medic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258347700136-9uvln9m561flb81i39vt91dleqkbbt7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKKTTY8rRZHrl1aY2vHevVtSeEYoIzC1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258347700136-9uvln9m561flb81i39vt91dleqkbbt7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
