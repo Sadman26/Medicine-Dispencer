@@ -7,7 +7,7 @@
     tools:context=".homepage">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/scheduling"
         android:layout_width="164dp"
         android:layout_height="133dp"
         app:layout_constraintBottom_toBottomOf="parent"

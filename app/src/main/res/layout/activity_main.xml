@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.323" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/morningbtn"
         android:layout_width="336dp"
         android:layout_height="79dp"
         android:backgroundTint="#2196F3"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.567" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/noonbtn"
         android:layout_width="336dp"
         android:layout_height="79dp"
         android:backgroundTint="#FB8C00"
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.731" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/nightbtn"
         android:layout_width="336dp"
         android:layout_height="79dp"
         android:backgroundTint="#6D4C41"
