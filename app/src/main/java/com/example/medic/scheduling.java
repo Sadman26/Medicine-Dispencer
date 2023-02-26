@@ -43,7 +43,7 @@ public class scheduling extends AppCompatActivity {
                     if(millis<0){
                         millis+=24 * 60 * 60 * 1000;
                     }
-                    database.getReference().child("Morning").setValue(millis);
+                    database.getReference().child("Schedule").child("time1").setValue(millis);
                     Toast.makeText(scheduling.this, "Sucessfully Morning Time Updated", Toast.LENGTH_SHORT).show();
                 }catch (Exception e){
                     Toast.makeText(scheduling.this, "Please Maintain HH:MM Format(24Hour)", Toast.LENGTH_SHORT).show();
@@ -61,7 +61,7 @@ public class scheduling extends AppCompatActivity {
                     if(millis2<0){
                         millis2+=24 * 60 * 60 * 1000;
                     }
-                    database.getReference().child("Noon").setValue(millis2);
+                    database.getReference().child("Schedule").child("time2").setValue(millis2);
                     Toast.makeText(scheduling.this, "Sucessfully Noon Time Updated", Toast.LENGTH_SHORT).show();
                 }catch (Exception e){
                     Toast.makeText(scheduling.this, "Please Maintain HH:MM Format(24Hour)", Toast.LENGTH_SHORT).show();
@@ -80,7 +80,7 @@ public class scheduling extends AppCompatActivity {
                     if(millis3<0){
                         millis3+=24 * 60 * 60 * 1000;
                     }
-                    database.getReference().child("Night").setValue(millis3);
+                    database.getReference().child("Schedule").child("time3").setValue(millis3);
                     Toast.makeText(scheduling.this, "Sucessfully Night Time Updated", Toast.LENGTH_SHORT).show();
                 }catch (Exception e){
                     Toast.makeText(scheduling.this, "Please Maintain HH:MM Format(24Hour)", Toast.LENGTH_SHORT).show();
