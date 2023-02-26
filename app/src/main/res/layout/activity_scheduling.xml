@@ -6,6 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".scheduling">
 
+    <TextView
+        android:id="@+id/nighttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Night time :"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:id="@+id/noontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Noon time :"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
     <Button
         android:id="@+id/nightupdatebutton"
         android:layout_width="wrap_content"
@@ -122,5 +152,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.263" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Input as 24hr format HH:MM"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/morningtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Morning time :"
+        android:textColor="@color/black"
+        android:textSize="17.5sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

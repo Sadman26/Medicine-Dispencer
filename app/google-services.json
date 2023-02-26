@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "258347700136",
-    "firebase_url": "https://iott-bc848-default-rtdb.firebaseio.com",
-    "project_id": "iott-bc848",
-    "storage_bucket": "iott-bc848.appspot.com"
+    "project_number": "33537051859",
+    "firebase_url": "https://iottt-f5e25-default-rtdb.firebaseio.com",
+    "project_id": "iottt-f5e25",
+    "storage_bucket": "iottt-f5e25.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:258347700136:android:448d04f02639823b3e979d",
+        "mobilesdk_app_id": "1:33537051859:android:cab7af3e639f94409c9826",
         "android_client_info": {
           "package_name": "com.example.medic"
         }
       },
       "oauth_client": [
         {
-          "client_id": "258347700136-9uvln9m561flb81i39vt91dleqkbbt7b.apps.googleusercontent.com",
+          "client_id": "33537051859-5tc4f7ugll2k33v13pjk57nedfkqe6go.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBKKTTY8rRZHrl1aY2vHevVtSeEYoIzC1I"
+          "current_key": "AIzaSyAdSOARr6gPQExLkMi5HHNap608q_LJuUE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "258347700136-9uvln9m561flb81i39vt91dleqkbbt7b.apps.googleusercontent.com",
+              "client_id": "33537051859-5tc4f7ugll2k33v13pjk57nedfkqe6go.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
