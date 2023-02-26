@@ -24,17 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         FirebaseApp.initializeApp(this);
         db = FirebaseDatabase.getInstance();
-        name = findViewById(R.id.nametxt);
-        savebtn = findViewById(R.id.savebtn);
-        savebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                db.getReference().child("Names").setValue(name.getText().toString());
-                Toast.makeText(MainActivity.this, "Successfully Added !", Toast.LENGTH_SHORT).show();
-                //and then nametxt value null
-                name.setText("");
-            }
-        });
         morningbtn = findViewById(R.id.morningbtn);
         noonbtn=findViewById(R.id.noonbtn);
         nightbtn=findViewById(R.id.nightbtn);
@@ -42,27 +31,27 @@ public class MainActivity extends AppCompatActivity {
         morningbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.getReference().child("Morning").setValue(1);
+                db.getReference().child("Manual").child("Morning").setValue(true);
                 Toast.makeText(MainActivity.this, "Manually Activated!", Toast.LENGTH_SHORT).show();
-                db.getReference().child("Morning").setValue(0);
+
             }
         });
         //when noonbtn clicked then it will store firebase to noon at value 1
         noonbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.getReference().child("Noon").setValue(1);
+                db.getReference().child("Manual").child("Noon").setValue(true);
                 Toast.makeText(MainActivity.this, "Manually Activated!", Toast.LENGTH_SHORT).show();
-                db.getReference().child("Noon").setValue(0);
+
             }
         });
         //when nightbtn clicked then it will store firebase to night at value 1
         nightbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.getReference().child("Night").setValue(1);
+                db.getReference().child("Manual").child("Night").setValue(true);
                 Toast.makeText(MainActivity.this, "Manually Activated!", Toast.LENGTH_SHORT).show();
-                db.getReference().child("Night").setValue(0);
+
 
             }
         });
