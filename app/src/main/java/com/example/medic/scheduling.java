@@ -22,7 +22,6 @@ public class scheduling extends AppCompatActivity {
     String mrng,noon,night;
     Button morningupbtn,noonupbtn,nightupbtn;
     TextView morningtxt,noontxt,nighttxt;
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +45,6 @@ public class scheduling extends AppCompatActivity {
                 try {
                     SimpleDateFormat sdf = new SimpleDateFormat("HH:mm",Locale.getDefault());
                     Date date = sdf.parse(mrng);
-                    long millis = date.getTime();
-                    if(millis<0){
-                        millis+=24 * 60 * 60 * 1000;
-                    }
-                    database.getReference().child("schedule").child("time1").setValue(millis);
                     database.getReference().child("storetime").child("time1").setValue(mrng);
                     Toast.makeText(scheduling.this, "Sucessfully Morning Time Updated", Toast.LENGTH_SHORT).show();
                     database.getReference().child("storetime").child("time1").get().addOnCompleteListener(task -> {
@@ -71,11 +65,6 @@ public class scheduling extends AppCompatActivity {
                 try {
                     SimpleDateFormat sdf = new SimpleDateFormat("HH:mm",Locale.getDefault());
                     Date date = sdf.parse(noon);
-                    long millis2 = date.getTime();
-                    if(millis2<0){
-                        millis2+=24 * 60 * 60 * 1000;
-                    }
-                    database.getReference().child("schedule").child("time2").setValue(millis2);
                     database.getReference().child("storetime").child("time2").setValue(noon);
                     Toast.makeText(scheduling.this, "Sucessfully Noon Time Updated", Toast.LENGTH_SHORT).show();
                     database.getReference().child("storetime").child("time2").get().addOnCompleteListener(task -> {
@@ -87,7 +76,6 @@ public class scheduling extends AppCompatActivity {
                 }catch (Exception e){
                     Toast.makeText(scheduling.this, "Please Maintain HH:MM Format(24Hour)", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
         nightupbtn.setOnClickListener(new View.OnClickListener() {
@@ -97,11 +85,6 @@ public class scheduling extends AppCompatActivity {
                 try {
                     SimpleDateFormat sdf = new SimpleDateFormat("HH:mm", Locale.getDefault());
                     Date date = sdf.parse(night);
-                    long millis3 = date.getTime();
-                    if(millis3<0){
-                        millis3+=24 * 60 * 60 * 1000;
-                    }
-                    database.getReference().child("schedule").child("time3").setValue(millis3);
                     database.getReference().child("storetime").child("time3").setValue(night);
                     Toast.makeText(scheduling.this, "Sucessfully Night Time Updated", Toast.LENGTH_SHORT).show();
                     database.getReference().child("storetime").child("time3").get().addOnCompleteListener(task -> {
