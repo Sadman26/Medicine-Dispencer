@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         morningbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.getReference().child("Manual").child("Morning").setValue(true);
+                db.getReference().child("Manual").child("Morning").setValue("true");
                 Toast.makeText(MainActivity.this, "Manually Activated!", Toast.LENGTH_SHORT).show();
 
             }
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         noonbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.getReference().child("Manual").child("Noon").setValue(true);
+                db.getReference().child("Manual").child("Noon").setValue("true");
                 Toast.makeText(MainActivity.this, "Manually Activated!", Toast.LENGTH_SHORT).show();
 
             }
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         nightbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.getReference().child("Manual").child("Night").setValue(true);
+                db.getReference().child("Manual").child("Night").setValue("true");
                 Toast.makeText(MainActivity.this, "Manually Activated!", Toast.LENGTH_SHORT).show();
 
 

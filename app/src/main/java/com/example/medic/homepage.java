@@ -29,7 +29,7 @@ public class homepage extends AppCompatActivity {
         scehdule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(homepage.this,scheduling.class);
+                Intent intent=new Intent(homepage.this,Scheduling.class);
                 startActivity(intent);
             }
         });
